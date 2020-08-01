@@ -19,3 +19,9 @@ a interatividade da aplicação.
     - react-dom: Renderização do React para web.
     - react-scripts: Transpilação de códigos mais novos para mais antigos.
     - "scripts" => Comandos para serem realizados.
+
+- Explicando alguns conceitos básicos...
+    - index.js => Primeiro arquivo aberto pela aplicação.
+    - Sempre lembrar de fazer os imports e exports.
+    - O ReactDOM.render só será usado UMA vez (para renderizar toda a aplicação).
+    - Componente => pedaço isolado de lógica, estrutura. (precisa obrigatoriamente retornar um conteúdo dentro do método/função render())
