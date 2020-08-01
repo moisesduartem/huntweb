@@ -1,0 +1,43 @@
+.product-info {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding:  20px;
+    background: #FFF;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+}
+
+.product-info h1 {
+    font-size: 32px;
+}
+
+.product-info p {
+    color: #666;
+    margin-top: 5px;
+}
+
+.product-info p a {
+    color: #069;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 20px;
+    background: #da552f;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button a {
+    color: #FFF;
+    text-decoration: none;
+}
