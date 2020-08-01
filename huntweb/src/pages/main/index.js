@@ -5,6 +5,13 @@ import api from '../../services/api';
 export default class Main extends Component {
 
     /**
+     * O estado (state) é SEMPRE um objeto.
+     */
+    state = {
+        products: [],
+    }
+
+    /**
      * Realiza alguma ação assim que o componente é exibido em tela.
      */
     componentDidMount() {
@@ -17,12 +24,17 @@ export default class Main extends Component {
      */
     loadProducts = async() => {
         const response = await api.get('/products');
-        console.log(response.data.docs);
+        /**
+         * Setando os produtos de acordo com o estado.
+         */
+        this.setState({ products: response.data.docs });
     };
 
     render() {
-        return <h1>
-            {this.props.message}
-        </h1>
+        return( <div className="product-list">
+            {this.state.products.map(product => (
+                <h2 key={product._id}>{product.title}</h2>
+        ))}
+        </div>)
     }
 }
